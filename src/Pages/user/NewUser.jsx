@@ -7,7 +7,6 @@ import { userInputs } from './../../formSource';
 
 const NewUser = () => {
   const [file, setFile] = useState('');
-  console.log(file);
   return (
     <div className="new">
       <Sidebar />

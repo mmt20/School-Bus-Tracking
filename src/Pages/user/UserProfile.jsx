@@ -49,7 +49,7 @@ const UserProfile = () => {
         </div>
 
         <div className="bottom">
-          <h1 className="title">Last Transactions</h1>
+          <h1 className="title">Last Kids Transactions (Status)</h1>
           <List />
         </div>
       </div>

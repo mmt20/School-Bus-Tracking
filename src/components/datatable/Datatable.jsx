@@ -2,6 +2,7 @@ import './datatable.scss';
 import { DataGrid, GridToolbar } from '@mui/x-data-grid';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+
 const Datatable = ({ rows, coloum, type }) => {
   const [data, setData] = useState(rows);
 
@@ -18,12 +19,14 @@ const Datatable = ({ rows, coloum, type }) => {
       renderCell: (params) => {
         return (
           <div className="cellAction">
-            <Link
-              to={`/${type}/${params.row.id}`}
-              style={{ textDecoration: 'none' }}
-            >
-              <div className="viewButton">View</div>
-            </Link>
+            {type !== 'buses' ? (
+              <Link
+                to={`/${type}/${params.row.id}`}
+                style={{ textDecoration: 'none' }}
+              >
+                <div className="viewButton">View</div>
+              </Link>
+            ) : null}
 
             <div
               className="deleteButton"
@@ -38,6 +41,7 @@ const Datatable = ({ rows, coloum, type }) => {
   ];
   // make first letter uppercase
   const name = type.charAt(0).toUpperCase() + type.slice(1);
+
   return (
     <div className="datatable">
       <div className="datatableTitle">
@@ -46,8 +50,14 @@ const Datatable = ({ rows, coloum, type }) => {
           Add New
         </Link>
       </div>
+
       <DataGrid
         slots={{ toolbar: GridToolbar }}
+        slotProps={{
+          toolbar: {
+            showQuickFilter: true,
+          },
+        }}
         className="datagrid"
         rows={data}
         columns={coloum.concat(actionColum)}

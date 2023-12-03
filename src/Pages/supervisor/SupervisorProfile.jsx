@@ -14,7 +14,7 @@ const SupervisorProfile = () => {
           <div className="left">
             <div className="editButton">Edit</div>
             <h1 className="title">Supervisor Information</h1>
-            <div className="supervisor ">
+            <div className="supervisor">
               <img
                 src="https://images.pexels.com/photos/2068343/pexels-photo-2068343.jpeg"
                 alt="avatar"
@@ -44,13 +44,13 @@ const SupervisorProfile = () => {
           <div className="right">
             <Chart
               aspect={3 / 1}
-              title="supervisor  Kids Transactions (Last 6 Months)"
+              title="Total Kids Supervised (Last 6 Months)"
             />
           </div>
         </div>
 
         <div className="bottom">
-          <h1 className="title">Last Transactions</h1>
+          <h1 className="title">Last Kids Supervised (Status)</h1>
           <List />
         </div>
       </div>

@@ -1,4 +1,4 @@
-import './style/supervisorTable.scss';
+import './style/newSupervisor.scss';
 import Navbar from '../../components/navbar/Navbar';
 import Sidebar from '../../components/sidebar/Sidebar';
 import DriveFolderUploadOutlinedIcon from '@mui/icons-material/DriveFolderUploadOutlined';

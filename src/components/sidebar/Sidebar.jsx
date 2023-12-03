@@ -5,15 +5,10 @@ import ChildCareOutlinedIcon from '@mui/icons-material/ChildCareOutlined';
 import DirectionsBusFilledOutlinedIcon from '@mui/icons-material/DirectionsBusFilledOutlined';
 import Face6OutlinedIcon from '@mui/icons-material/Face6Outlined';
 import SupervisorAccountOutlinedIcon from '@mui/icons-material/SupervisorAccountOutlined';
-
-import AnalyticsIcon from '@mui/icons-material/Analytics';
 import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
-import SettingsSystemDaydreamOutlinedIcon from '@mui/icons-material/SettingsSystemDaydreamOutlined';
-import PsychologyOutlinedIcon from '@mui/icons-material/PsychologyOutlined';
-import SettingsApplicationsIcon from '@mui/icons-material/SettingsApplications';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import ExitToAppOutlinedIcon from '@mui/icons-material/ExitToAppOutlined';
-
+import CampaignOutlinedIcon from '@mui/icons-material/CampaignOutlined';
 import { Link } from 'react-router-dom';
 import { useContext } from 'react';
 import { DarkModeContext } from '../../context/darkModeContext';
@@ -69,25 +64,12 @@ const Sidebar = () => {
           </Link>
           <p className="title">USEFUL</p>
           <li>
-            <AnalyticsIcon className="icon" />
-            <span>Status</span>
+            <CampaignOutlinedIcon className="icon" />
+            <span>Announcement</span>
           </li>
           <li>
             <NotificationsNoneOutlinedIcon className="icon" />
             <span>Notifications</span>
-          </li>
-          <p className="title">SERVICE</p>
-          <li>
-            <SettingsSystemDaydreamOutlinedIcon className="icon" />
-            <span>System Health</span>
-          </li>
-          <li>
-            <PsychologyOutlinedIcon className="icon" />
-            <span>Logs</span>
-          </li>
-          <li>
-            <SettingsApplicationsIcon className="icon" />
-            <span>Settings</span>
           </li>
           <p className="title">USER</p>
           <li>
